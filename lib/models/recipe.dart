@@ -4,7 +4,7 @@ class Recipe {
   final int _duration;
   final String _photo;
 
-  Recipe({
+  const Recipe({
     required int id,
     required String name,
     required int duration,
@@ -13,6 +13,14 @@ class Recipe {
         _name = name,
         _duration = duration,
         _photo = photo;
+
+  Recipe.fromJson(Map<String, dynamic> json)
+      : this(
+          id: json['id'],
+          name: json['name'],
+          duration: json['duration'],
+          photo: json['photo'],
+        );
 
   int get id => _id;
   String get name => _name;
