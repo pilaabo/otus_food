@@ -1,7 +1,7 @@
 import 'package:otus_food/models/recipe.dart';
 
 class RecipeManager {
-  static final List<Recipe> _recipes = [
+  final List<Recipe> _recipes = [
     const Recipe(
       id: 2,
       name: 'Домашний рататуй',
@@ -44,7 +44,7 @@ class RecipeManager {
             'https://i.pinimg.com/564x/95/f5/fa/95f5fa8c805a176ac9a24e435146ccbb.jpg'),
   ];
 
-  static List<Recipe> getRecipes() {
+  List<Recipe> getRecipes() {
     return _recipes;
   }
 }

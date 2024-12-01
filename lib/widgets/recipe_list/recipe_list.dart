@@ -9,16 +9,12 @@ class RecipeList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: ListView.builder(
-          scrollDirection: Axis.vertical,
-          itemCount: recipes.length,
-          itemBuilder: (context, index) {
-            return RecipeCard(recipe: recipes[index]);
-          },
-        ),
-      ),
+    return ListView.builder(
+      scrollDirection: Axis.vertical,
+      itemCount: recipes.length,
+      itemBuilder: (context, index) {
+        return RecipeCard(recipe: recipes[index]);
+      },
     );
   }
 }
