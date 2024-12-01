@@ -10,12 +10,12 @@ class RecipeCardImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(5), // Закругление изображения
+      borderRadius: BorderRadius.circular(5),
       child: Image.network(
-        imageUrl, // Ссылка на изображение
-        width: 120, // Ширина изображения
-        height: 120, // Высота изображения
-        fit: BoxFit.cover, // Заполнение изображения
+        imageUrl,
+        width: 120,
+        height: 120,
+        fit: BoxFit.cover,
         loadingBuilder: (context, child, loadingProgress) {
           if (loadingProgress == null) {
             return child;

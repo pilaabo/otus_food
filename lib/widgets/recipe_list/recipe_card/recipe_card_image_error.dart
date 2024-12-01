@@ -6,7 +6,7 @@ class RecipeCardImageError extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.black, // Серый цвет
+      color: Colors.black,
       width: 120,
       height: 120,
       child: const Icon(

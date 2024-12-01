@@ -20,19 +20,19 @@ class RecipeCardDescription extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          const SizedBox(height: 8), // Отступ между заголовком и временем
+          const SizedBox(height: 8),
           Row(
             children: [
               const Icon(
                 Icons.access_time,
-                color: Colors.grey,
+                color: Colors.black,
                 size: 16,
               ),
               const SizedBox(width: 4),
               Text(
                 '$recipeDuration минут',
                 style: const TextStyle(
-                  color: Colors.green,
+                  color: Color(0xFF2ECC71),
                   fontSize: 16,
                 ),
               ),
